@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AquaMythica | Legendary Freshwater Aquarium Universe</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background: linear-gradient(180deg,#000428,#004e92);
+color:white;
+overflow-x:hidden;
+}
+
+/* Hero Section */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:50px;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px #00ffff;}
+to{text-shadow:0 0 30px #00ffff;}
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+}
+
+.hero button{
+margin-top:25px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#00ffff;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#00ccff;
+transform:scale(1.1);
+}
+
+/* Navigation */
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.8);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00ffff;
+}
+
+/* Sections */
+.section{
+padding:80px 20px;
+text-align:center;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+margin:20px auto;
+padding:30px;
+border-radius:20px;
+max-width:700px;
+backdrop-filter:blur(6px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.gallery img{
+width:100%;
+max-width:250px;
+margin:10px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* Fish Animation */
+.fish{
+position:fixed;
+font-size:40px;
+animation:swim 20s linear infinite;
+}
+
+@keyframes swim{
+0%{left:-100px;}
+100%{left:110%;}
+}
+
+.fish:nth-child(1){top:30%; animation-duration:18s;}
+.fish:nth-child(2){top:60%; animation-duration:25s;}
+
+/* Footer */
+footer{
+text-align:center;
+padding:25px;
+background:#000;
+}
+
+/* Mobile */
+@media(max-width:768px){
+.hero h1{font-size:28px;}
+nav a{display:block;margin:8px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="fish">🐟</div>
+<div class="fish">🐠</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#fish">Fish</a>
+<a href="#planted">Planted</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>🌊 AquaMythica 🐠</h1>
+<p>The Legendary Freshwater Aquarium Universe</p>
+<button onclick="alert('Welcome to AquaMythica! 🌊')">Explore Now</button>
+</section>
+
+<section id="about" class="section">
+<h2>About AquaMythica</h2>
+<div class="card">
+<p>A rare underwater world dedicated to freshwater fish lovers, aquascapers, and aquarium beginners.</p>
+</div>
+</section>
+
+<section id="fish" class="section">
+<h2>Popular Freshwater Fish</h2>
+<div class="card">
+<p>✔ Betta Fish</p>
+<p>✔ Guppy</p>
+<p>✔ Neon Tetra</p>
+<p>✔ Angelfish</p>
+</div>
+</section>
+
+<section id="planted" class="section">
+<h2>Planted Tank Setup</h2>
+<div class="card">
+<p>✔ Soil substrate</p>
+<p>✔ LED lighting</p>
+<p>✔ CO2 system</p>
+<p>✔ Weekly maintenance</p>
+</div>
+</section>
+
+<section id="gallery" class="section">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13">
+<img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: aquamythica.official@gmail.com</p>
+</div>
+</section>
+
+<footer>
+© 2026 AquaMythica | aquamythica.official@gmail.com
+<br><br>
+
+
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com/" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=21478724&style=0007&nbdigits=5&type=page&initCount=0" title="Free Tools" Alt="Free Tools"   border="0" /></a>     
+</footer>
+
+</body>
+</html>
